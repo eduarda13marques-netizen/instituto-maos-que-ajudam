@@ -1,0 +1,531 @@
+:root {
+    --cor-principal: #B6BBE8;
+    --cor-secundario: #8c1e1898;
+    --cor-blocos: #668fb7a0;
+    --cor-de-texto: #000000;
+    --cor-da-borda01: #1F3A5F;
+    --cor-da-borda02: #636aac;
+    --cor-formulario: #F3EFE6;
+    --cor-destaque: #5F8A7B;
+}
+
+/*INDEX.*/
+body {
+    background-color: var(--cor-principal);
+    /* Cria cor de fundo */
+    font-size: medium;
+    /* muda o tamanho da letra */
+    font-family: Arial, Helvetica, sans-serif;
+    /*escolhe o tamanho da letra */
+}
+
+#hamburguer {
+    display: none;
+}
+
+.hamburguer {
+    display: none;
+}
+
+.titulo01 {
+    text-align: center;
+    /* Alinha o texto para o lado que quer*/
+    background-color: var(--cor-secundario);
+    color: var(--cor-de-texto);
+    /* Escolhe a cor da letra*/
+    border-radius: 20px;
+    /* Cria um circulo no conteudo */
+    border: 2px solid var(--cor-da-borda01);
+    /* Faz a linha do ciruclo*/
+    padding: 2px;
+    /* cria um espaço dentro do conteudo */
+    margin: 30px;
+    /* cria um espaço fora do conteudo */
+}
+
+.bloco1 {
+    display: flex;
+    /* Ativa o flexbox, onde vc pode organizar o conteudo*/
+    flex-direction: row-reverse;
+    /* faz o conteudo ficar em horizontal --- */
+    justify-content: space-around;
+    /*Cria um espaço entre o conteudo*/
+}
+
+.bloco1 img {
+    border-radius: 90px;
+    border: 1px solid black;
+}
+
+/*MENU*/
+
+.menu1 {
+    background-color: var(--cor-secundario);
+    height: 150px;
+    /*Altura do conteudo*/
+    border-radius: 20px;
+    border: 1px solid var(--cor-da-borda01);
+    padding: 20px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.menu1 h2 {
+    text-align: center;
+}
+
+.menu1 ul {
+    /* alinha o texto dentro*/
+    text-align: left;
+    list-style: none;
+    /*Tira a bolinha da lista*/
+    padding: 0;
+}
+
+.menu1 a {
+    text-decoration: none;
+    /*Tira a linha debaixo do texto*/
+    color: var(--cor-de-texto);
+}
+
+.menu1 li {
+    margin-bottom: 10px;
+    /* cria o espaçamento entre o conteudo.*/
+}
+
+.dropdown {
+    position: relative;
+
+}
+
+.dropdown ul {
+    display: none;
+    /* display: none → esconde o elemento */
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background-color: var(--cor-secundario);
+    border-radius: 20px;
+    border: 2px solid var(--cor-da-borda01);
+    padding: 15px;
+    width: 250px;
+}
+
+.dropdown ul a {
+    color: var(--cor-formulario);
+}
+
+
+.dropdown:hover ul {
+    /* display: block → faz o elemento aparecer */
+    display: block;
+}
+
+
+.bloco2 {
+    max-width: 400px;
+    line-height: 20px;
+    background-color: var(--cor-blocos);
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid var(--cor-da-borda02);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+
+.subt {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.text {
+    text-align: left;
+    max-width: 250px;
+    line-height: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/*PROJETO.*/
+
+.divpro {
+    display: flex;
+    justify-content: space-around;
+}
+
+.blocopro {
+    background-color: var(--cor-secundario);
+    color: var(--cor-de-texto);
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid var(--cor-da-borda01);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*cria bloquinhos*/
+    gap: 20px;
+    /*quebra qualquer conteudo e arrasta para baixo*/
+}
+
+.grid article {
+    border-radius: 10px;
+    background-color: var(--cor-blocos);
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid var(--cor-da-borda02);
+    margin: 10px;
+}
+
+.ongpro {
+    background-color: var(--cor-secundario);
+    color: var(--cor-de-texto);
+    padding: 2px;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid var(--cor-da-borda01);
+    width: 500px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.projet {
+    background-color: var(--cor-blocos);
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid var(--cor-da-borda01);
+    width: 500px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.badge00 {
+    background-color: var(--cor-formulario);
+    padding: 5px;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.badge01 {
+    background-color: var(--cor-formulario);
+    padding: 5px;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.badge02 {
+    background-color: var(--cor-formulario);
+    padding: 5px;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.badge03 {
+    background-color: var(--cor-formulario);
+    padding: 5px;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+
+/*CADASTRO*/
+
+.divcadastro {
+    /* BLOCO DO MENU AO H1*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo03 {
+    /*TITULO*/
+    text-align: center;
+    margin-right: 708px;
+    margin-top: 30px;
+    padding: 30px;
+    background-color: var(--cor-secundario);
+    border-radius: 20px;
+    border: 2px solid var(--cor-da-borda01);
+}
+
+.blococadastro {
+    /*BLOCO DO H2 AO P*/
+    background-color: var(--cor-formulario);
+    text-align: center;
+    max-width: 900px;
+    /*cria colunas nos textos*/
+    line-height: normal;
+    padding: 2px;
+    margin-top: 20px;
+    margin: auto;
+    border-radius: 20px;
+    border: 2px solid var(--cor-da-borda01);
+}
+
+fieldset {
+    /*BLOCO DO GRID*/
+    display: grid;
+    width: 600px;
+    margin: auto;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.dados1 {
+    /*BLOCO DO DADOS*/
+    margin-top: 50px;
+}
+
+input[type="submit"] {
+    /*BLOCO DO BOTÃO*/
+    display: block;
+    margin: auto;
+    background-color: var(--cor-destaque);
+}
+
+input[type="submit"]:hover {
+    background-color: var(--cor-da-borda02);
+}
+
+input[type="submit"]:focus {
+    background-color: var(--cor-da-borda01);
+    /*Ele serve para mostrar visualmente que o elemento está selecionado/focado, por exemplo quando você chega até o botão usando a tecla Tab.*/
+}
+
+input[type="submit"]:active {
+    background-color: rgb(255, 102, 0);
+    transform: scale(0.95);
+}
+
+#mensagem {
+    /*BLOCO DA MENSAGEM*/
+    width: 700px;
+    height: 200px;
+}
+
+
+input:valid {
+    /*muda a aparência quando o campo é considerado válido*/
+    border: 2px solid rgb(72, 135, 76);
+}
+
+input:invalid {
+    /*muda a aparência quando o campo é considerado inválido*/
+    border: 2px solid rgb(156, 62, 62);
+}
+
+.alerta {
+    background-color: var(--cor-destaque);
+    border-radius: 20px;
+    width: 450px;
+    margin: auto;
+}
+
+.alerta p {
+    text-align: center;
+    padding: 5px;
+}
+
+.toast {
+    position: fixed;
+    bottom: 20px;
+    background-color: var(--cor-destaque);
+    border-radius: 20px;
+    border:2px solid var(--cor-de-texto);
+    padding: 2px;
+}
+
+.modal {
+    position: fixed;
+    top: 32%;
+    left: 33%;
+    background-color: var(--cor-destaque);
+    border-radius: 20px;
+    border: 2px solid var(--cor-de-texto);
+    padding: 3px;
+    text-align: center;
+}
+
+.modal button {
+    background-color: var(--cor-formulario);
+
+}
+
+
+
+/*RESPONSIVIDADE*/
+
+@media (max-width:600px) { /* Adapta o layout de acordo com o tamanho da tela*/
+    .titulo01 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:500px) { /*MEDIA DO INDEX*/
+    .bloco1 {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width:600px) {  /*MEDIA DO INDEX*/
+    main {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width:600px) { /*MEDIA DO INDEX*/
+    .menu1 {
+        width: 100px;
+        margin-left: 150px;
+        margin-bottom: 1px;
+    }
+}
+
+@media (max-width:600px) { /*MEDIA DO INDEX*/
+    img {
+        width: 385px;
+        height: 385px;
+        margin: auto;
+    }
+}
+
+@media (max-width:600px) { /*MEDIA DO INDEX*/
+    .bloco2 {
+        margin: auto;
+
+    }
+}
+
+@media (max-width:992px) { /*MEDIA DO PROJETOS*/
+    .divpro {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+}
+
+@media (max-width:600px) { /*MEDIA DO PROJETOS*/
+    .titulo02 {
+        text-align: center;
+        font-size: 20px;
+
+    }
+}
+
+@media (max-width:600px) { /*MEDIA DO PROJETOS*/
+    .ongpro {
+        font-size: 20px;
+        width: 450px;
+    }
+}
+
+@media (max-width:1200px) {
+
+    /*MEDIA DO PROJETOS*/
+    .projet {
+        font-size: 20px;
+        width: 450px;
+
+    }
+}
+
+@media (max-width:768px) {
+
+    /*MEDIA DO CADASTRO*/
+    .divcadastro {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width:600px) {/*MEDIA DO CADASTRO*/
+    .divcadastro .menu1 {
+        margin: auto;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:600px) {
+
+    /*MEDIA DO CADASTRO*/
+    .titulo03 {
+        margin-right: 0px
+    }
+}
+
+@media (max-width:600px) {
+
+    /*MEDIA DO CADASTRO*/
+    form {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:600px) {
+
+    /*MEDIA DO CADASTRO*/
+    fieldset {
+        width: 350px;
+    }
+}
+
+@media (max-width:600px) {
+
+    /*MEDIA DO CADASTRO*/
+    form fieldset:nth-of-type(3) {
+        /*seleciona o terceiro elemento daquele tipo*/
+        width: 350px;
+        margin-top: 50px;
+    }
+
+    #mensagem {
+        width: 350px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    /*MEDIA DO INDEX*/
+    .menu1 ul {
+        display: none;
+    }
+
+    .hamburguer {
+        display: block;
+    }
+
+    .hamburguer ul {
+        display: none;
+    }
+
+    #hamburguer:checked~ul {
+        display: block;
+    }
+}
+
+@media (max-width:600px) {
+    .modal {
+        left: 50%;
+                transform: translateX(-50%);
+}
+}
+
