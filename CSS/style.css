@@ -344,7 +344,7 @@ input:invalid {
     bottom: 20px;
     background-color: var(--cor-destaque);
     border-radius: 20px;
-    border:2px solid var(--cor-de-texto);
+    border: 2px solid var(--cor-de-texto);
     padding: 2px;
 }
 
@@ -368,20 +368,26 @@ input:invalid {
 
 /*RESPONSIVIDADE*/
 
-@media (max-width:600px) { /* Adapta o layout de acordo com o tamanho da tela*/
+@media (max-width:600px) {
+
+    /* Adapta o layout de acordo com o tamanho da tela*/
     .titulo01 {
         font-size: 20px;
     }
 }
 
-@media (max-width:500px) { /*MEDIA DO INDEX*/
+@media (max-width:500px) {
+
+    /*MEDIA DO INDEX*/
     .bloco1 {
         flex-direction: column;
         gap: 20px;
     }
 }
 
-@media (max-width:600px) {  /*MEDIA DO INDEX*/
+@media (max-width:600px) {
+
+    /*MEDIA DO INDEX*/
     main {
         flex-direction: column;
         align-items: center;
@@ -389,7 +395,9 @@ input:invalid {
     }
 }
 
-@media (max-width:600px) { /*MEDIA DO INDEX*/
+@media (max-width:600px) {
+
+    /*MEDIA DO INDEX*/
     .menu1 {
         width: 100px;
         margin-left: 150px;
@@ -397,7 +405,9 @@ input:invalid {
     }
 }
 
-@media (max-width:600px) { /*MEDIA DO INDEX*/
+@media (max-width:600px) {
+
+    /*MEDIA DO INDEX*/
     img {
         width: 385px;
         height: 385px;
@@ -405,14 +415,18 @@ input:invalid {
     }
 }
 
-@media (max-width:600px) { /*MEDIA DO INDEX*/
+@media (max-width:600px) {
+
+    /*MEDIA DO INDEX*/
     .bloco2 {
         margin: auto;
 
     }
 }
 
-@media (max-width:992px) { /*MEDIA DO PROJETOS*/
+@media (max-width:992px) {
+
+    /*MEDIA DO PROJETOS*/
     .divpro {
         display: flex;
         flex-direction: column;
@@ -421,7 +435,9 @@ input:invalid {
     }
 }
 
-@media (max-width:600px) { /*MEDIA DO PROJETOS*/
+@media (max-width:600px) {
+
+    /*MEDIA DO PROJETOS*/
     .titulo02 {
         text-align: center;
         font-size: 20px;
@@ -429,7 +445,9 @@ input:invalid {
     }
 }
 
-@media (max-width:600px) { /*MEDIA DO PROJETOS*/
+@media (max-width:600px) {
+
+    /*MEDIA DO PROJETOS*/
     .ongpro {
         font-size: 20px;
         width: 450px;
@@ -456,7 +474,9 @@ input:invalid {
     }
 }
 
-@media (max-width:600px) {/*MEDIA DO CADASTRO*/
+@media (max-width:600px) {
+
+    /*MEDIA DO CADASTRO*/
     .divcadastro .menu1 {
         margin: auto;
         margin-bottom: 10px;
@@ -525,7 +545,15 @@ input:invalid {
 @media (max-width:600px) {
     .modal {
         left: 50%;
-                transform: translateX(-50%);
-}
+        transform: translateX(-50%);
+    }
 }
 
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--cor-destaque);
+    outline-offset: 2px;
+}
